@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		400612291D205DB500AFC68D /* DataDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400612281D205DB500AFC68D /* DataDecryptor.swift */; };
+		4006122B1D205FDA00AFC68D /* CryptoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006122A1D205FDA00AFC68D /* CryptoExtensions.swift */; };
+		4006122D1D206B5800AFC68D /* DataPersistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006122C1D206B5800AFC68D /* DataPersistor.swift */; };
+		4006122F1D206D1D00AFC68D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006122E1D206D1D00AFC68D /* MainViewController.swift */; };
+		400612311D206D6E00AFC68D /* StoryboardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400612301D206D6E00AFC68D /* StoryboardConfigurator.swift */; };
+		400612331D2082D100AFC68D /* PlacesNetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400612321D2082D100AFC68D /* PlacesNetWorker.swift */; };
+		400612351D2082E100AFC68D /* RentNetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400612341D2082E100AFC68D /* RentNetWorker.swift */; };
+		400612381D208B4500AFC68D /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400612371D208B4500AFC68D /* PlaceMarker.swift */; };
+		4006123A1D20900F00AFC68D /* MapWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400612391D20900F00AFC68D /* MapWorker.swift */; };
+		400612421D2093A500AFC68D /* SaitamaRentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400612411D2093A500AFC68D /* SaitamaRentTests.swift */; };
+		400612501D2093AA00AFC68D /* SaitamaRentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006124F1D2093AA00AFC68D /* SaitamaRentUITests.swift */; };
+		4031F94F1D1F952F00F33E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F94E1D1F952F00F33E59 /* AppDelegate.swift */; };
+		4031F9541D1F952F00F33E59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4031F9521D1F952F00F33E59 /* Main.storyboard */; };
+		4031F9561D1F952F00F33E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4031F9551D1F952F00F33E59 /* Assets.xcassets */; };
+		4031F9591D1F952F00F33E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4031F9571D1F952F00F33E59 /* LaunchScreen.storyboard */; };
+		4031F9611D1F986600F33E59 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4031F9601D1F986600F33E59 /* Auth.storyboard */; };
+		4031F9671D1F9E5400F33E59 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F9661D1F9E5400F33E59 /* AuthViewController.swift */; };
+		4031F96A1D1F9F8000F33E59 /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F9691D1F9F8000F33E59 /* DataValidator.swift */; };
+		4031F96C1D1F9F9C00F33E59 /* DataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F96B1D1F9F9C00F33E59 /* DataCollector.swift */; };
+		4031F96E1D1FA01500F33E59 /* SessionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F96D1D1FA01500F33E59 /* SessionWorker.swift */; };
+		4031F9701D1FA09100F33E59 /* DataEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F96F1D1FA09100F33E59 /* DataEncryptor.swift */; };
+		4031F9731D1FA45300F33E59 /* KeyboardNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F9721D1FA45300F33E59 /* KeyboardNotifier.swift */; };
+		4031F9791D1FBE8800F33E59 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F9781D1FBE8800F33E59 /* UIKitExtensions.swift */; };
+		4031F97B1D1FD31700F33E59 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F97A1D1FD31700F33E59 /* SignUpViewController.swift */; };
+		4031F97D1D1FD6D700F33E59 /* StyleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F97C1D1FD6D700F33E59 /* StyleWorker.swift */; };
+		4031F97F1D1FDBC900F33E59 /* AuthNetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F97E1D1FDBC900F33E59 /* AuthNetWorker.swift */; };
+		4031F9811D1FDD7B00F33E59 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F9801D1FDD7B00F33E59 /* Constants.swift */; };
+		4031F9831D1FDF1400F33E59 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4031F9821D1FDF1400F33E59 /* Localizable.strings */; };
+		4031F9851D1FE2FC00F33E59 /* LoaderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031F9841D1FE2FC00F33E59 /* LoaderWorker.swift */; };
+		40A298E01D209F2B00714965 /* Rent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A298DF1D209F2B00714965 /* Rent.storyboard */; };
+		40A298E21D209F3B00714965 /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A298E11D209F3B00714965 /* RentViewController.swift */; };
+		802592DE3A0E32614431AA57 /* Pods_SaitamaRent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6348AE3F2DE4A6A4CB9FE4B /* Pods_SaitamaRent.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		400612441D2093A500AFC68D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4031F9431D1F952F00F33E59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4031F94A1D1F952F00F33E59;
+			remoteInfo = SaitamaRent;
+		};
+		400612521D2093AA00AFC68D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4031F9431D1F952F00F33E59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4031F94A1D1F952F00F33E59;
+			remoteInfo = SaitamaRent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		400612281D205DB500AFC68D /* DataDecryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDecryptor.swift; sourceTree = "<group>"; };
+		4006122A1D205FDA00AFC68D /* CryptoExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoExtensions.swift; sourceTree = "<group>"; };
+		4006122C1D206B5800AFC68D /* DataPersistor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPersistor.swift; sourceTree = "<group>"; };
+		4006122E1D206D1D00AFC68D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		400612301D206D6E00AFC68D /* StoryboardConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardConfigurator.swift; sourceTree = "<group>"; };
+		400612321D2082D100AFC68D /* PlacesNetWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesNetWorker.swift; sourceTree = "<group>"; };
+		400612341D2082E100AFC68D /* RentNetWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentNetWorker.swift; sourceTree = "<group>"; };
+		400612371D208B4500AFC68D /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		400612391D20900F00AFC68D /* MapWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapWorker.swift; sourceTree = "<group>"; };
+		4006123F1D2093A500AFC68D /* SaitamaRentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaitamaRentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		400612411D2093A500AFC68D /* SaitamaRentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaitamaRentTests.swift; sourceTree = "<group>"; };
+		400612431D2093A500AFC68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4006124D1D2093AA00AFC68D /* SaitamaRentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaitamaRentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4006124F1D2093AA00AFC68D /* SaitamaRentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaitamaRentUITests.swift; sourceTree = "<group>"; };
+		400612511D2093AA00AFC68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4031F94B1D1F952F00F33E59 /* SaitamaRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaitamaRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4031F94E1D1F952F00F33E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4031F9531D1F952F00F33E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4031F9551D1F952F00F33E59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4031F9581D1F952F00F33E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4031F95A1D1F952F00F33E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4031F9601D1F986600F33E59 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		4031F9661D1F9E5400F33E59 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		4031F9691D1F9F8000F33E59 /* DataValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataValidator.swift; sourceTree = "<group>"; };
+		4031F96B1D1F9F9C00F33E59 /* DataCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollector.swift; sourceTree = "<group>"; };
+		4031F96D1D1FA01500F33E59 /* SessionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionWorker.swift; sourceTree = "<group>"; };
+		4031F96F1D1FA09100F33E59 /* DataEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEncryptor.swift; sourceTree = "<group>"; };
+		4031F9721D1FA45300F33E59 /* KeyboardNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotifier.swift; sourceTree = "<group>"; };
+		4031F9781D1FBE8800F33E59 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		4031F97A1D1FD31700F33E59 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4031F97C1D1FD6D700F33E59 /* StyleWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleWorker.swift; sourceTree = "<group>"; };
+		4031F97E1D1FDBC900F33E59 /* AuthNetWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthNetWorker.swift; sourceTree = "<group>"; };
+		4031F9801D1FDD7B00F33E59 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4031F9821D1FDF1400F33E59 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4031F9841D1FE2FC00F33E59 /* LoaderWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderWorker.swift; sourceTree = "<group>"; };
+		40A298DF1D209F2B00714965 /* Rent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rent.storyboard; sourceTree = "<group>"; };
+		40A298E11D209F3B00714965 /* RentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
+		40A298E31D20A06000714965 /* SaitamaRent-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SaitamaRent-Bridging-Header.h"; sourceTree = "<group>"; };
+		752E914193A31033AD9B1106 /* Pods-SaitamaRent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaitamaRent.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaitamaRent/Pods-SaitamaRent.release.xcconfig"; sourceTree = "<group>"; };
+		E6348AE3F2DE4A6A4CB9FE4B /* Pods_SaitamaRent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaitamaRent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FC2420CCD507D326A5213C /* Pods-SaitamaRent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaitamaRent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaitamaRent/Pods-SaitamaRent.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4006123C1D2093A500AFC68D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4006124A1D2093AA00AFC68D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4031F9481D1F952F00F33E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802592DE3A0E32614431AA57 /* Pods_SaitamaRent.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FA93CE3045B058D2FF4C854 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6348AE3F2DE4A6A4CB9FE4B /* Pods_SaitamaRent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		289E47DEE6460645DA04D37D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7FC2420CCD507D326A5213C /* Pods-SaitamaRent.debug.xcconfig */,
+				752E914193A31033AD9B1106 /* Pods-SaitamaRent.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		400612361D208B3000AFC68D /* GMaps */ = {
+			isa = PBXGroup;
+			children = (
+				400612391D20900F00AFC68D /* MapWorker.swift */,
+				400612371D208B4500AFC68D /* PlaceMarker.swift */,
+			);
+			path = GMaps;
+			sourceTree = "<group>";
+		};
+		400612401D2093A500AFC68D /* SaitamaRentTests */ = {
+			isa = PBXGroup;
+			children = (
+				400612431D2093A500AFC68D /* Info.plist */,
+				400612411D2093A500AFC68D /* SaitamaRentTests.swift */,
+			);
+			path = SaitamaRentTests;
+			sourceTree = "<group>";
+		};
+		4006124E1D2093AA00AFC68D /* SaitamaRentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				400612511D2093AA00AFC68D /* Info.plist */,
+				4006124F1D2093AA00AFC68D /* SaitamaRentUITests.swift */,
+			);
+			path = SaitamaRentUITests;
+			sourceTree = "<group>";
+		};
+		4031F9421D1F952F00F33E59 = {
+			isa = PBXGroup;
+			children = (
+				4031F94D1D1F952F00F33E59 /* SaitamaRent */,
+				1FA93CE3045B058D2FF4C854 /* Frameworks */,
+				289E47DEE6460645DA04D37D /* Pods */,
+				4031F94C1D1F952F00F33E59 /* Products */,
+				400612401D2093A500AFC68D /* SaitamaRentTests */,
+				4006124E1D2093AA00AFC68D /* SaitamaRentUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		4031F94C1D1F952F00F33E59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4031F94B1D1F952F00F33E59 /* SaitamaRent.app */,
+				4006123F1D2093A500AFC68D /* SaitamaRentTests.xctest */,
+				4006124D1D2093AA00AFC68D /* SaitamaRentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4031F94D1D1F952F00F33E59 /* SaitamaRent */ = {
+			isa = PBXGroup;
+			children = (
+				4031F9771D1FBE6100F33E59 /* Extensions */,
+				4031F9711D1FA29900F33E59 /* Resources */,
+				4031F9621D1F9E2300F33E59 /* Scenarios */,
+				4031F9681D1F9F6D00F33E59 /* Workers */,
+				4031F94E1D1F952F00F33E59 /* AppDelegate.swift */,
+			);
+			path = SaitamaRent;
+			sourceTree = "<group>";
+		};
+		4031F9621D1F9E2300F33E59 /* Scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				4031F9631D1F9E2B00F33E59 /* Auth */,
+				4031F9641D1F9E3100F33E59 /* Main */,
+				4031F9651D1F9E3600F33E59 /* Rent */,
+			);
+			path = Scenarios;
+			sourceTree = "<group>";
+		};
+		4031F9631D1F9E2B00F33E59 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4031F9601D1F986600F33E59 /* Auth.storyboard */,
+				4031F9661D1F9E5400F33E59 /* AuthViewController.swift */,
+				4031F97A1D1FD31700F33E59 /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		4031F9641D1F9E3100F33E59 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4031F9521D1F952F00F33E59 /* Main.storyboard */,
+				4006122E1D206D1D00AFC68D /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4031F9651D1F9E3600F33E59 /* Rent */ = {
+			isa = PBXGroup;
+			children = (
+				40A298DF1D209F2B00714965 /* Rent.storyboard */,
+				40A298E11D209F3B00714965 /* RentViewController.swift */,
+			);
+			path = Rent;
+			sourceTree = "<group>";
+		};
+		4031F9681D1F9F6D00F33E59 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				4031F9761D1FA46000F33E59 /* Local Data */,
+				4031F9751D1FA45B00F33E59 /* Network */,
+				4031F9741D1FA45700F33E59 /* UI */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		4031F9711D1FA29900F33E59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4031F9551D1F952F00F33E59 /* Assets.xcassets */,
+				4031F9801D1FDD7B00F33E59 /* Constants.swift */,
+				4031F95A1D1F952F00F33E59 /* Info.plist */,
+				4031F9571D1F952F00F33E59 /* LaunchScreen.storyboard */,
+				4031F9821D1FDF1400F33E59 /* Localizable.strings */,
+				40A298E31D20A06000714965 /* SaitamaRent-Bridging-Header.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4031F9741D1FA45700F33E59 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				400612361D208B3000AFC68D /* GMaps */,
+				4031F9721D1FA45300F33E59 /* KeyboardNotifier.swift */,
+				4031F9841D1FE2FC00F33E59 /* LoaderWorker.swift */,
+				400612301D206D6E00AFC68D /* StoryboardConfigurator.swift */,
+				4031F97C1D1FD6D700F33E59 /* StyleWorker.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4031F9751D1FA45B00F33E59 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4031F97E1D1FDBC900F33E59 /* AuthNetWorker.swift */,
+				400612321D2082D100AFC68D /* PlacesNetWorker.swift */,
+				400612341D2082E100AFC68D /* RentNetWorker.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4031F9761D1FA46000F33E59 /* Local Data */ = {
+			isa = PBXGroup;
+			children = (
+				4031F96B1D1F9F9C00F33E59 /* DataCollector.swift */,
+				400612281D205DB500AFC68D /* DataDecryptor.swift */,
+				4031F96F1D1FA09100F33E59 /* DataEncryptor.swift */,
+				4006122C1D206B5800AFC68D /* DataPersistor.swift */,
+				4031F9691D1F9F8000F33E59 /* DataValidator.swift */,
+				4031F96D1D1FA01500F33E59 /* SessionWorker.swift */,
+			);
+			path = "Local Data";
+			sourceTree = "<group>";
+		};
+		4031F9771D1FBE6100F33E59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4006122A1D205FDA00AFC68D /* CryptoExtensions.swift */,
+				4031F9781D1FBE8800F33E59 /* UIKitExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4006123E1D2093A500AFC68D /* SaitamaRentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400612461D2093A500AFC68D /* Build configuration list for PBXNativeTarget "SaitamaRentTests" */;
+			buildPhases = (
+				4006123B1D2093A500AFC68D /* Sources */,
+				4006123C1D2093A500AFC68D /* Frameworks */,
+				4006123D1D2093A500AFC68D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				400612451D2093A500AFC68D /* PBXTargetDependency */,
+			);
+			name = SaitamaRentTests;
+			productName = SaitamaRentTests;
+			productReference = 4006123F1D2093A500AFC68D /* SaitamaRentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4006124C1D2093AA00AFC68D /* SaitamaRentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400612541D2093AA00AFC68D /* Build configuration list for PBXNativeTarget "SaitamaRentUITests" */;
+			buildPhases = (
+				400612491D2093AA00AFC68D /* Sources */,
+				4006124A1D2093AA00AFC68D /* Frameworks */,
+				4006124B1D2093AA00AFC68D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				400612531D2093AA00AFC68D /* PBXTargetDependency */,
+			);
+			name = SaitamaRentUITests;
+			productName = SaitamaRentUITests;
+			productReference = 4006124D1D2093AA00AFC68D /* SaitamaRentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4031F94A1D1F952F00F33E59 /* SaitamaRent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4031F95D1D1F952F00F33E59 /* Build configuration list for PBXNativeTarget "SaitamaRent" */;
+			buildPhases = (
+				C1EBC7D7519D07434AC662E4 /* 📦 Check Pods Manifest.lock */,
+				4031F9471D1F952F00F33E59 /* Sources */,
+				4031F9481D1F952F00F33E59 /* Frameworks */,
+				4031F9491D1F952F00F33E59 /* Resources */,
+				7E3B4B7650B2184E164F97F3 /* 📦 Embed Pods Frameworks */,
+				3EE920571E48095B4C8282AE /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaitamaRent;
+			productName = SaitamaRent;
+			productReference = 4031F94B1D1F952F00F33E59 /* SaitamaRent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4031F9431D1F952F00F33E59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ShadeApps;
+				TargetAttributes = {
+					4006123E1D2093A500AFC68D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4031F94A1D1F952F00F33E59;
+					};
+					4006124C1D2093AA00AFC68D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4031F94A1D1F952F00F33E59;
+					};
+					4031F94A1D1F952F00F33E59 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 26X9MMPTBH;
+					};
+				};
+			};
+			buildConfigurationList = 4031F9461D1F952F00F33E59 /* Build configuration list for PBXProject "SaitamaRent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4031F9421D1F952F00F33E59;
+			productRefGroup = 4031F94C1D1F952F00F33E59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4031F94A1D1F952F00F33E59 /* SaitamaRent */,
+				4006123E1D2093A500AFC68D /* SaitamaRentTests */,
+				4006124C1D2093AA00AFC68D /* SaitamaRentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4006123D1D2093A500AFC68D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4006124B1D2093AA00AFC68D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4031F9491D1F952F00F33E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4031F9831D1FDF1400F33E59 /* Localizable.strings in Resources */,
+				4031F9611D1F986600F33E59 /* Auth.storyboard in Resources */,
+				4031F9591D1F952F00F33E59 /* LaunchScreen.storyboard in Resources */,
+				40A298E01D209F2B00714965 /* Rent.storyboard in Resources */,
+				4031F9561D1F952F00F33E59 /* Assets.xcassets in Resources */,
+				4031F9541D1F952F00F33E59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EE920571E48095B4C8282AE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaRent/Pods-SaitamaRent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E3B4B7650B2184E164F97F3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaRent/Pods-SaitamaRent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1EBC7D7519D07434AC662E4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4006123B1D2093A500AFC68D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400612421D2093A500AFC68D /* SaitamaRentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400612491D2093AA00AFC68D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400612501D2093AA00AFC68D /* SaitamaRentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4031F9471D1F952F00F33E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4031F9851D1FE2FC00F33E59 /* LoaderWorker.swift in Sources */,
+				40A298E21D209F3B00714965 /* RentViewController.swift in Sources */,
+				4006122B1D205FDA00AFC68D /* CryptoExtensions.swift in Sources */,
+				4031F9671D1F9E5400F33E59 /* AuthViewController.swift in Sources */,
+				4031F9731D1FA45300F33E59 /* KeyboardNotifier.swift in Sources */,
+				400612351D2082E100AFC68D /* RentNetWorker.swift in Sources */,
+				4031F97D1D1FD6D700F33E59 /* StyleWorker.swift in Sources */,
+				400612291D205DB500AFC68D /* DataDecryptor.swift in Sources */,
+				4031F96A1D1F9F8000F33E59 /* DataValidator.swift in Sources */,
+				4031F97B1D1FD31700F33E59 /* SignUpViewController.swift in Sources */,
+				4031F96E1D1FA01500F33E59 /* SessionWorker.swift in Sources */,
+				4031F9811D1FDD7B00F33E59 /* Constants.swift in Sources */,
+				4031F94F1D1F952F00F33E59 /* AppDelegate.swift in Sources */,
+				4006123A1D20900F00AFC68D /* MapWorker.swift in Sources */,
+				400612311D206D6E00AFC68D /* StoryboardConfigurator.swift in Sources */,
+				4031F9791D1FBE8800F33E59 /* UIKitExtensions.swift in Sources */,
+				4031F97F1D1FDBC900F33E59 /* AuthNetWorker.swift in Sources */,
+				400612381D208B4500AFC68D /* PlaceMarker.swift in Sources */,
+				4006122D1D206B5800AFC68D /* DataPersistor.swift in Sources */,
+				4006122F1D206D1D00AFC68D /* MainViewController.swift in Sources */,
+				400612331D2082D100AFC68D /* PlacesNetWorker.swift in Sources */,
+				4031F9701D1FA09100F33E59 /* DataEncryptor.swift in Sources */,
+				4031F96C1D1F9F9C00F33E59 /* DataCollector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		400612451D2093A500AFC68D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4031F94A1D1F952F00F33E59 /* SaitamaRent */;
+			targetProxy = 400612441D2093A500AFC68D /* PBXContainerItemProxy */;
+		};
+		400612531D2093AA00AFC68D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4031F94A1D1F952F00F33E59 /* SaitamaRent */;
+			targetProxy = 400612521D2093AA00AFC68D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4031F9521D1F952F00F33E59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4031F9531D1F952F00F33E59 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		4031F9571D1F952F00F33E59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4031F9581D1F952F00F33E59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		400612471D2093A500AFC68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SaitamaRentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shadeapps.SaitamaRentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaitamaRent.app/SaitamaRent";
+			};
+			name = Debug;
+		};
+		400612481D2093A500AFC68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SaitamaRentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shadeapps.SaitamaRentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaitamaRent.app/SaitamaRent";
+			};
+			name = Release;
+		};
+		400612551D2093AA00AFC68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SaitamaRentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shadeapps.SaitamaRentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SaitamaRent;
+			};
+			name = Debug;
+		};
+		400612561D2093AA00AFC68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SaitamaRentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shadeapps.SaitamaRentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SaitamaRent;
+			};
+			name = Release;
+		};
+		4031F95B1D1F952F00F33E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4031F95C1D1F952F00F33E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4031F95E1D1F952F00F33E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7FC2420CCD507D326A5213C /* Pods-SaitamaRent.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SaitamaRent/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shadeapps.SaitamaRent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SaitamaRent/Resources/SaitamaRent-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4031F95F1D1F952F00F33E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 752E914193A31033AD9B1106 /* Pods-SaitamaRent.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SaitamaRent/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shadeapps.SaitamaRent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SaitamaRent/Resources/SaitamaRent-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		400612461D2093A500AFC68D /* Build configuration list for PBXNativeTarget "SaitamaRentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400612471D2093A500AFC68D /* Debug */,
+				400612481D2093A500AFC68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		400612541D2093AA00AFC68D /* Build configuration list for PBXNativeTarget "SaitamaRentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400612551D2093AA00AFC68D /* Debug */,
+				400612561D2093AA00AFC68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4031F9461D1F952F00F33E59 /* Build configuration list for PBXProject "SaitamaRent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4031F95B1D1F952F00F33E59 /* Debug */,
+				4031F95C1D1F952F00F33E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4031F95D1D1F952F00F33E59 /* Build configuration list for PBXNativeTarget "SaitamaRent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4031F95E1D1F952F00F33E59 /* Debug */,
+				4031F95F1D1F952F00F33E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4031F9431D1F952F00F33E59 /* Project object */;
+}

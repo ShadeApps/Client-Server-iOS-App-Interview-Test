@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  SaitamaRent
+
+  Created by Сергей Грищёв on 26.06.16.
+  Copyright © 2016 ShadeApps. All rights reserved.
+*/
+
+WrongData = "Wrong data";
+WrongDataLong = "Please, check the data you entered and try again. For security reasons passwords can only contain latin letters (a-z) 🔑👾";
+
+ServerError = "Network error";
+ServerErrorLong = "Could not load data, check your connection and repeat 🚫⚠️";
+
+RentBikeTitle = "Rent a bike";
+
+LogOut = "Log Out?";
+LogOutLong = "Are you sure you want to log out? 🔚";
+
+LogOutOptionYes = "Log Out";
+LogOutOptionNo = "Cancel";
+
+RentBikeAlertTitle = "Rent from this location?";
+RentBikeAlertBody = "Rent a bike from ";
+RentBikeOptionYes = "Rent";
+RentBikeOptionNo = "Cancel";
+
+RentSuccessAlertTitle = "Success!";
+RentSuccessAlertBody = "Rent operation has been completed! Enjoy your ride 😉";

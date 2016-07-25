@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FBq-vb-LHp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainVC" id="BYZ-38-t0r" customClass="MainViewController" customModule="SaitamaRent" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uu8-iC-E70" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uu8-iC-E70" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KJB-8X-wYc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uu8-iC-E70" secondAttribute="trailing" id="PNw-oO-3jj"/>
+                            <constraint firstItem="Uu8-iC-E70" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TRW-uW-WNF"/>
+                            <constraint firstItem="Uu8-iC-E70" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="U9j-kb-ptW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uu8-iC-E70" secondAttribute="bottom" id="rI4-aZ-X74"/>
+                            <constraint firstAttribute="trailing" secondItem="Uu8-iC-E70" secondAttribute="trailing" id="sgc-pI-hV2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KJB-8X-wYc"/>
+                                <exclude reference="PNw-oO-3jj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="nDk-LL-mNr">
+                        <barButtonItem key="leftBarButtonItem" image="btnLocation" id="FbB-DL-j5U">
+                            <connections>
+                                <action selector="btnCenterMapTapped:" destination="BYZ-38-t0r" id="HBP-ot-YCY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="xYU-7b-LvN">
+                            <connections>
+                                <action selector="btnLogoutTapped:" destination="BYZ-38-t0r" id="Abv-KP-Ag1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainMapView" destination="Uu8-iC-E70" id="hIt-w4-TOJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1351" y="246"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wwX-hx-EWo">
+            <objects>
+                <navigationController storyboardIdentifier="mainVCNav" automaticallyAdjustsScrollViewInsets="NO" id="FBq-vb-LHp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="raf-jP-yMM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IDV-1C-1ds"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T80-Ft-s0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="246"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btnLocation" width="32" height="32"/>
+    </resources>
+</document>

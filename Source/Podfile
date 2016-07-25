@@ -1,0 +1,20 @@
+platform :ios, ‘8.0’
+inhibit_all_warnings!
+use_frameworks!
+
+target 'SaitamaRent' do
+
+# UI
+pod 'EZAlertController'
+pod 'MBProgressHUD'
+
+# maps & networking
+pod 'GoogleMaps'
+pod 'Alamofire'
+
+# payment & security
+pod 'Caishen'
+pod 'CardIO'
+pod 'CryptoSwift'
+
+end

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="k4g-lo-u7y">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Rent View Controller-->
+        <scene sceneID="eov-cR-NAF">
+            <objects>
+                <viewController id="k4g-lo-u7y" customClass="RentViewController" customModule="SaitamaRent" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DUd-Yp-5xD"/>
+                        <viewControllerLayoutGuide type="bottom" id="cIJ-CH-hKE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zqb-y0-TQa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64b-dl-qzR">
+                                <rect key="frame" x="19" y="30" width="69" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="NkQ-Qy-hcU"/>
+                                    <constraint firstAttribute="height" constant="30" id="xrA-JD-jwM"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.82745098039999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnCancelTapped:" destination="k4g-lo-u7y" eventType="touchUpInside" id="Z9h-fQ-g3E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnQ-GH-UGf">
+                                <rect key="frame" x="505" y="30" width="75" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="agi-fF-iXR"/>
+                                    <constraint firstAttribute="width" constant="75" id="lHL-gc-HGr"/>
+                                </constraints>
+                                <state key="normal" title="Rent"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnRentTapped:" destination="k4g-lo-u7y" eventType="touchUpInside" id="iH0-2f-yYR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill in the details of your card:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgd-ID-s2N">
+                                <rect key="frame" x="150" y="261" width="300" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0000000000000000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBK-U6-bY4" customClass="CardTextField" customModule="Caishen">
+                                <rect key="frame" x="150" y="292" width="300" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GTX-oB-UlF"/>
+                                    <constraint firstAttribute="width" constant="300" id="mFX-N0-41I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ALEX PETROV" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UiJ-Yc-hPK">
+                                <rect key="frame" x="150" y="330" width="300" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="YDJ-ow-6eR"/>
+                                    <constraint firstAttribute="height" constant="40" id="hdd-ts-CK6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UiJ-Yc-hPK" firstAttribute="width" secondItem="yBK-U6-bY4" secondAttribute="width" id="0HU-XD-BOq"/>
+                            <constraint firstItem="Cgd-ID-s2N" firstAttribute="centerX" secondItem="Zqb-y0-TQa" secondAttribute="centerX" id="DgK-Pn-pPN"/>
+                            <constraint firstItem="64b-dl-qzR" firstAttribute="leading" secondItem="Zqb-y0-TQa" secondAttribute="leading" constant="19" id="I9N-Wz-LHt"/>
+                            <constraint firstItem="yBK-U6-bY4" firstAttribute="centerX" secondItem="Zqb-y0-TQa" secondAttribute="centerX" id="OuB-io-qkQ"/>
+                            <constraint firstItem="yBK-U6-bY4" firstAttribute="centerY" secondItem="Zqb-y0-TQa" secondAttribute="centerY" id="RkU-ah-bRe"/>
+                            <constraint firstItem="UiJ-Yc-hPK" firstAttribute="top" secondItem="yBK-U6-bY4" secondAttribute="bottom" constant="8" id="byU-H7-5lT"/>
+                            <constraint firstItem="yBK-U6-bY4" firstAttribute="top" secondItem="Cgd-ID-s2N" secondAttribute="bottom" constant="8" id="cpH-IB-4qk"/>
+                            <constraint firstItem="Cgd-ID-s2N" firstAttribute="leading" secondItem="yBK-U6-bY4" secondAttribute="leading" id="f1j-Uo-5lV"/>
+                            <constraint firstItem="GnQ-GH-UGf" firstAttribute="top" secondItem="DUd-Yp-5xD" secondAttribute="bottom" constant="10" id="kEa-P0-ZO6"/>
+                            <constraint firstItem="yBK-U6-bY4" firstAttribute="width" secondItem="Cgd-ID-s2N" secondAttribute="width" id="sHc-2S-KR2"/>
+                            <constraint firstItem="UiJ-Yc-hPK" firstAttribute="height" secondItem="yBK-U6-bY4" secondAttribute="height" id="sVA-JU-4Qh"/>
+                            <constraint firstAttribute="trailing" secondItem="GnQ-GH-UGf" secondAttribute="trailing" constant="20" id="sw1-Uc-Trf"/>
+                            <constraint firstItem="UiJ-Yc-hPK" firstAttribute="centerX" secondItem="Zqb-y0-TQa" secondAttribute="centerX" id="tEy-PA-CDv"/>
+                            <constraint firstItem="64b-dl-qzR" firstAttribute="top" secondItem="DUd-Yp-5xD" secondAttribute="bottom" constant="10" id="uAG-uV-j6S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardNumberTextField" destination="yBK-U6-bY4" id="Rkd-zy-qha"/>
+                        <outlet property="rentButton" destination="GnQ-GH-UGf" id="m2h-RN-5pN"/>
+                        <outlet property="txtName" destination="UiJ-Yc-hPK" id="km1-fw-O9N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="La8-mn-Yxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984" y="134"/>
+        </scene>
+    </scenes>
+</document>
